@@ -14,6 +14,9 @@
 		019A2F861CA8D6B800714B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019A2F841CA8D6B800714B66 /* LaunchScreen.storyboard */; };
 		019A2F911CA8D6B800714B66 /* MenPhotoMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A2F901CA8D6B800714B66 /* MenPhotoMasterTests.swift */; };
 		019A2F9C1CA8D6B800714B66 /* MenPhotoMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A2F9B1CA8D6B800714B66 /* MenPhotoMasterUITests.swift */; };
+		01E3319A1CAA5B0500E41395 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E331991CAA5B0500E41395 /* CenterViewController.swift */; };
+		01E3319C1CAA9ECB00E41395 /* 壁紙.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E3319B1CAA9ECB00E41395 /* 壁紙.png */; };
+		01E3319E1CAAFF4500E41395 /* 壁紙2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E3319D1CAAFF4500E41395 /* 壁紙2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		019A2F971CA8D6B800714B66 /* MenPhotoMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenPhotoMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		019A2F9B1CA8D6B800714B66 /* MenPhotoMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenPhotoMasterUITests.swift; sourceTree = "<group>"; };
 		019A2F9D1CA8D6B800714B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E331991CAA5B0500E41395 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterViewController.swift; path = ../CenterViewController.swift; sourceTree = "<group>"; };
+		01E3319B1CAA9ECB00E41395 /* 壁紙.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "壁紙.png"; sourceTree = "<group>"; };
+		01E3319D1CAAFF4500E41395 /* 壁紙2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "壁紙2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		019A2F7A1CA8D6B800714B66 /* MenPhotoMaster */ = {
 			isa = PBXGroup;
 			children = (
+				01E3319B1CAA9ECB00E41395 /* 壁紙.png */,
+				01E3319D1CAAFF4500E41395 /* 壁紙2.png */,
 				019A2F7B1CA8D6B800714B66 /* AppDelegate.swift */,
 				019A2F7D1CA8D6B800714B66 /* ViewController.swift */,
+				01E331991CAA5B0500E41395 /* CenterViewController.swift */,
 				019A2F7F1CA8D6B800714B66 /* Main.storyboard */,
 				019A2F821CA8D6B800714B66 /* Assets.xcassets */,
 				019A2F841CA8D6B800714B66 /* LaunchScreen.storyboard */,
@@ -232,6 +241,8 @@
 				019A2F861CA8D6B800714B66 /* LaunchScreen.storyboard in Resources */,
 				019A2F831CA8D6B800714B66 /* Assets.xcassets in Resources */,
 				019A2F811CA8D6B800714B66 /* Main.storyboard in Resources */,
+				01E3319C1CAA9ECB00E41395 /* 壁紙.png in Resources */,
+				01E3319E1CAAFF4500E41395 /* 壁紙2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E3319A1CAA5B0500E41395 /* CenterViewController.swift in Sources */,
 				019A2F7E1CA8D6B800714B66 /* ViewController.swift in Sources */,
 				019A2F7C1CA8D6B800714B66 /* AppDelegate.swift in Sources */,
 			);
@@ -400,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MenPhotoMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.MenPhotoMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MenPhotoMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.MenPhotoMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +496,7 @@
 				019A2FA21CA8D6B800714B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		019A2FA31CA8D6B800714B66 /* Build configuration list for PBXNativeTarget "MenPhotoMasterTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +505,7 @@
 				019A2FA51CA8D6B800714B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		019A2FA61CA8D6B800714B66 /* Build configuration list for PBXNativeTarget "MenPhotoMasterUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +514,7 @@
 				019A2FA81CA8D6B800714B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
