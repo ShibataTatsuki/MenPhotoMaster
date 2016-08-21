@@ -17,6 +17,13 @@
 		01E3319A1CAA5B0500E41395 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E331991CAA5B0500E41395 /* CenterViewController.swift */; };
 		01E3319C1CAA9ECB00E41395 /* 壁紙.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E3319B1CAA9ECB00E41395 /* 壁紙.png */; };
 		01E3319E1CAAFF4500E41395 /* 壁紙2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E3319D1CAAFF4500E41395 /* 壁紙2.png */; };
+		01F5B3631D683DA2006D5724 /* AoyagiKouzanTOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 016B97951D68024C0056C5F4 /* AoyagiKouzanTOTF.otf */; };
+		01F5B3751D68487A006D5724 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5B3701D68487A006D5724 /* Default-568h@2x.png */; };
+		01F5B3761D68487A006D5724 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5B3711D68487A006D5724 /* Default-667h@2x.png */; };
+		01F5B3771D68487A006D5724 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5B3721D68487A006D5724 /* Default-736h@3x.png */; };
+		01F5B3781D68487A006D5724 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5B3731D68487A006D5724 /* Default.png */; };
+		01F5B3791D68487A006D5724 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5B3741D68487A006D5724 /* Default@2x.png */; };
+		01F5B37B1D6935E2006D5724 /* button-1157299_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F5B37A1D6935E2006D5724 /* button-1157299_1280.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016B97951D68024C0056C5F4 /* AoyagiKouzanTOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AoyagiKouzanTOTF.otf; sourceTree = "<group>"; };
 		019A2F781CA8D6B800714B66 /* MenPhotoMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenPhotoMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019A2F7B1CA8D6B800714B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		019A2F7D1CA8D6B800714B66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +61,12 @@
 		01E331991CAA5B0500E41395 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterViewController.swift; path = ../CenterViewController.swift; sourceTree = "<group>"; };
 		01E3319B1CAA9ECB00E41395 /* 壁紙.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "壁紙.png"; sourceTree = "<group>"; };
 		01E3319D1CAAFF4500E41395 /* 壁紙2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "壁紙2.png"; sourceTree = "<group>"; };
+		01F5B3701D68487A006D5724 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		01F5B3711D68487A006D5724 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		01F5B3721D68487A006D5724 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		01F5B3731D68487A006D5724 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		01F5B3741D68487A006D5724 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		01F5B37A1D6935E2006D5724 /* button-1157299_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-1157299_1280.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,7 @@
 		019A2F6F1CA8D6B800714B66 = {
 			isa = PBXGroup;
 			children = (
+				01F5B36F1D68487A006D5724 /* Defaults */,
 				019A2F7A1CA8D6B800714B66 /* MenPhotoMaster */,
 				019A2F8F1CA8D6B800714B66 /* MenPhotoMasterTests */,
 				019A2F9A1CA8D6B800714B66 /* MenPhotoMasterUITests */,
@@ -103,12 +118,14 @@
 		019A2F7A1CA8D6B800714B66 /* MenPhotoMaster */ = {
 			isa = PBXGroup;
 			children = (
+				01F5B37A1D6935E2006D5724 /* button-1157299_1280.png */,
 				01E3319B1CAA9ECB00E41395 /* 壁紙.png */,
 				01E3319D1CAAFF4500E41395 /* 壁紙2.png */,
 				019A2F7B1CA8D6B800714B66 /* AppDelegate.swift */,
 				019A2F7D1CA8D6B800714B66 /* ViewController.swift */,
 				01E331991CAA5B0500E41395 /* CenterViewController.swift */,
 				019A2F7F1CA8D6B800714B66 /* Main.storyboard */,
+				016B97951D68024C0056C5F4 /* AoyagiKouzanTOTF.otf */,
 				019A2F821CA8D6B800714B66 /* Assets.xcassets */,
 				019A2F841CA8D6B800714B66 /* LaunchScreen.storyboard */,
 				019A2F871CA8D6B800714B66 /* Info.plist */,
@@ -132,6 +149,18 @@
 				019A2F9D1CA8D6B800714B66 /* Info.plist */,
 			);
 			path = MenPhotoMasterUITests;
+			sourceTree = "<group>";
+		};
+		01F5B36F1D68487A006D5724 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				01F5B3701D68487A006D5724 /* Default-568h@2x.png */,
+				01F5B3711D68487A006D5724 /* Default-667h@2x.png */,
+				01F5B3721D68487A006D5724 /* Default-736h@3x.png */,
+				01F5B3731D68487A006D5724 /* Default.png */,
+				01F5B3741D68487A006D5724 /* Default@2x.png */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +231,7 @@
 				TargetAttributes = {
 					019A2F771CA8D6B800714B66 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WMC287PW34;
 					};
 					019A2F8B1CA8D6B800714B66 = {
 						CreatedOnToolsVersion = 7.3;
@@ -238,11 +268,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F5B3631D683DA2006D5724 /* AoyagiKouzanTOTF.otf in Resources */,
 				019A2F861CA8D6B800714B66 /* LaunchScreen.storyboard in Resources */,
 				019A2F831CA8D6B800714B66 /* Assets.xcassets in Resources */,
 				019A2F811CA8D6B800714B66 /* Main.storyboard in Resources */,
 				01E3319C1CAA9ECB00E41395 /* 壁紙.png in Resources */,
+				01F5B3791D68487A006D5724 /* Default@2x.png in Resources */,
+				01F5B3771D68487A006D5724 /* Default-736h@3x.png in Resources */,
+				01F5B3761D68487A006D5724 /* Default-667h@2x.png in Resources */,
+				01F5B3751D68487A006D5724 /* Default-568h@2x.png in Resources */,
 				01E3319E1CAAFF4500E41395 /* 壁紙2.png in Resources */,
+				01F5B3781D68487A006D5724 /* Default.png in Resources */,
+				01F5B37B1D6935E2006D5724 /* button-1157299_1280.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,11 +448,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MenPhotoMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.MenPhotoMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -423,11 +463,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MenPhotoMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.MenPhotoMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

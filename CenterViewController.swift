@@ -52,13 +52,14 @@ class CenterViewController: UIViewController,UITextFieldDelegate{
      改行ボタンが押された際に呼ばれるデリゲートメソッド.
      */
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+    textField.resignFirstResponder()
         
-        textField.resignFirstResponder()
+        
         return true
     }
     @IBAction func next(){
         appDelegate.mytext = myTextField.text!
+
         
     }
     func getDate()->NSString {
@@ -77,8 +78,8 @@ class CenterViewController: UIViewController,UITextFieldDelegate{
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+ 
+     // Pass the selected object to the new view controller.
     
     */
 

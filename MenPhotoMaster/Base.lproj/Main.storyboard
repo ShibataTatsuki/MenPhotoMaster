@@ -4,6 +4,17 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AoyagiKouzanTOTF.otf">
+            <string>AoyagiKouzanFontTOTF</string>
+            <string>AoyagiKouzanFontTOTF</string>
+            <string>AoyagiKouzanFontTOTF</string>
+            <string>AoyagiKouzanFontTOTF</string>
+            <string>AoyagiKouzanFontTOTF</string>
+            <string>AoyagiKouzanFontTOTF</string>
+            <string>AoyagiKouzanFontTOTF</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Center View Controller-->
         <scene sceneID="Al5-eQ-tGF">
@@ -14,36 +25,39 @@
                         <viewControllerLayoutGuide type="bottom" id="omE-mD-D9h"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2PS-Pz-YDY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4NE-f8-3jl">
-                                <rect key="frame" x="0.0" y="-34" width="375" height="701"/>
+                                <rect key="frame" x="0.0" y="-34" width="414" height="770"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J7w-dy-WGE">
-                                <rect key="frame" x="43" y="241" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="63" y="258" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP1-mA-ZxF">
-                                <rect key="frame" x="292" y="346" width="75" height="30"/>
-                                <state key="normal" title="作成する！"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kO-En-6rd">
+                                <rect key="frame" x="208" y="555" width="170" height="70"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="36"/>
+                                <state key="normal" title="作成する" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.032694619080000001" green="0.03253667406" blue="0.032852564100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="next" destination="Iuv-pv-RC3" eventType="touchUpInside" id="JMH-4B-wIO"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="KOZ-HF-Kzc"/>
+                                    <action selector="next" destination="Iuv-pv-RC3" eventType="touchUpInside" id="eyK-3i-MKA"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="zGl-nO-prV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="myTextField" destination="J7w-dy-WGE" id="6a1-lD-7zv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xb-5L-DTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300.5" y="286.5"/>
+            <point key="canvasLocation" x="-301" y="286"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -54,54 +68,76 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dqs-Ge-s4v">
-                                <rect key="frame" x="0.0" y="-34" width="375" height="701"/>
+                                <rect key="frame" x="0.0" y="-34" width="414" height="770"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjY-m0-TWL">
-                                <rect key="frame" x="0.0" y="28" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85m-PO-msM">
-                                <rect key="frame" x="110" y="611" width="44" height="32"/>
-                                <state key="normal" title="合成"/>
-                                <connections>
-                                    <action selector="processButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9f-jK-ztW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jS-tM-Sd4">
-                                <rect key="frame" x="178" y="611" width="45" height="30"/>
-                                <state key="normal" title="セピア"/>
+                                <rect key="frame" x="168" y="690" width="78" height="49"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="15"/>
+                                <state key="normal" title="セピア" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.032694619080000001" green="0.03253667406" blue="0.032852564100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onClickMyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0p-g5-0nK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKg-Td-VBX">
-                                <rect key="frame" x="20" y="611" width="75" height="30"/>
-                                <state key="normal" title="画像を取得"/>
+                                <rect key="frame" x="39" y="641" width="82" height="44"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="15"/>
+                                <state key="normal" title="画像を取得" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selctButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJg-ZN-fgd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTG-LV-RtP">
-                                <rect key="frame" x="244" y="612" width="90" height="30"/>
-                                <state key="normal" title="アップロード"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo1-Qd-5vZ">
+                                <rect key="frame" x="39" y="693" width="82" height="46"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="15"/>
+                                <state key="normal" title="戻る" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.032694619080000001" green="0.03253667406" blue="0.032852564100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="uploadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkQ-V3-etb"/>
+                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="moS-vo-0sJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここに画面が表示されます。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-RJ-YYg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
                                 <color key="backgroundColor" red="0.032694619082840229" green="0.032536674063116368" blue="0.032852564102564097" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.99497896559999999" blue="0.99965782719999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTG-LV-RtP">
+                                <rect key="frame" x="292" y="693.5" width="102" height="45"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="15"/>
+                                <state key="normal" title="アップロード" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkQ-V3-etb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8b-b3-F9F">
+                                <rect key="frame" x="168" y="641" width="78" height="44"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="16"/>
+                                <state key="normal" title="スタンプ" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="number1" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5u-za-0mm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="photoImageView" destination="yjY-m0-TWL" id="4z6-dC-kXI"/>
                         <outlet property="setumeiLabel" destination="nc1-RJ-YYg" id="M7l-Pu-XKU"/>
@@ -109,10 +145,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239.5" y="286.5"/>
+            <point key="canvasLocation" x="239" y="286"/>
         </scene>
     </scenes>
     <resources>
+        <image name="button-1157299_1280.png" width="1280" height="640"/>
         <image name="壁紙2.png" width="597" height="880"/>
     </resources>
 </document>
