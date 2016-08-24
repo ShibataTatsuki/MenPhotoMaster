@@ -169,7 +169,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
 //        let myOutputImage : CIImage = mySepiaFilter!.outputImage?
 
         
-        // image が 元画像のUIImage
+        // image が 元画像のUIImage セピア
         let ciImage:CIImage = CIImage(image:photoImageView.image!)!
         let ciFilter:CIFilter = CIFilter(name: "CISepiaTone")!
         ciFilter.setValue(ciImage, forKey: kCIInputImageKey)
@@ -178,7 +178,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         let cgimg:CGImageRef = ciContext.createCGImage(ciFilter.outputImage!, fromRect:ciFilter.outputImage!.extent)
         
         
-        //image2に加工後のUIImage
+        //image2に加工後のUIImage　セピア
         let image2:UIImage? = UIImage(CGImage: cgimg, scale: 1.0, orientation:UIImageOrientation.Up)
         photoImageView.image = image2
         photoImageView.setNeedsDisplay()

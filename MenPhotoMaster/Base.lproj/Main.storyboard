@@ -97,16 +97,6 @@
                                     <action selector="selctButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJg-ZN-fgd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo1-Qd-5vZ">
-                                <rect key="frame" x="39" y="693" width="82" height="46"/>
-                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="15"/>
-                                <state key="normal" title="戻る" backgroundImage="button-1157299_1280.png">
-                                    <color key="titleColor" red="0.032694619080000001" green="0.03253667406" blue="0.032852564100000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="moS-vo-0sJ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここに画面が表示されます。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-RJ-YYg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="644"/>
                                 <color key="backgroundColor" red="0.032694619082840229" green="0.032536674063116368" blue="0.032852564102564097" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,6 +122,16 @@
                                 </state>
                                 <connections>
                                     <action selector="number1" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5u-za-0mm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo1-Qd-5vZ">
+                                <rect key="frame" x="39" y="693" width="82" height="46"/>
+                                <fontDescription key="fontDescription" name="AoyagiKouzanFontTOTF" family="AoyagiKouzanFontTOTF" pointSize="15"/>
+                                <state key="normal" title="戻る" backgroundImage="button-1157299_1280.png">
+                                    <color key="titleColor" red="0.032694619080000001" green="0.03253667406" blue="0.032852564100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="moS-vo-0sJ"/>
                                 </connections>
                             </button>
                         </subviews>
