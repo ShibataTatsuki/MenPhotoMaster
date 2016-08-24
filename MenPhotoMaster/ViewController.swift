@@ -49,13 +49,11 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
     }
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         self .dismissViewControllerAnimated(true, completion: nil)
-        
+         self.setumeiLabel.hidden = true
         photoImageView.image = image
     }
     
     @IBAction func selctButtonTapped(sender: UIButton){
-        //    func sselectButtonTapped(){
-        self.setumeiLabel.hidden = true
         
         let alertController = UIAlertController(title: "画像の取得先を選択", message: nil, preferredStyle: .ActionSheet)
         let firstAction = UIAlertAction(title: "カメラ", style: .Default){
@@ -67,8 +65,6 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
             self.presentPickerController(.PhotoLibrary)
         }
         
-
-
         let cancelAction = UIAlertAction(title: "キャンセル", style: .Cancel, handler: nil)
         
         alertController.addAction(firstAction)
@@ -79,40 +75,6 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
         
     }
     
-//    func drawText(image: UIImage) -> UIImage
-    
-        
-//        let text = appDelegate.mytext
-//        let datetext = appDelegate.mydate
-//        UIGraphicsBeginImageContext(image.size)
-//        image.drawInRect(CGRectMake(0,0,image.size.width,image.size.height ))
-//        
-//        let textRect = CGRectMake(0,image.size.height/2-10,image.size.width, image.size.height - 5)
-//        let style = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-//        style.alignment = NSTextAlignment.Center
-//        let textFontAttributes = [
-//            NSFontAttributeName: UIFont.boldSystemFontOfSize(20),
-//            NSForegroundColorAttributeName: UIColor.redColor(),
-//            NSParagraphStyleAttributeName:style,
-//            NSBackgroundColorAttributeName:UIColor.blackColor().colorWithAlphaComponent(0.8)
-//        ]
-//        
-//        let textRect2 = CGRectMake(image.size.width/5,image.size.height*10/11,image.size.width, image.size.height - 5)
-//        let style2 = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-//        style2.alignment = NSTextAlignment.Center
-//        let text2FontAttributes = [
-//            NSFontAttributeName: UIFont.boldSystemFontOfSize(20),
-//            NSForegroundColorAttributeName: UIColor.redColor(),
-//            NSParagraphStyleAttributeName:style,
-//            NSBackgroundColorAttributeName:UIColor.blackColor().colorWithAlphaComponent(0.8)
-//        ]
-//        
-//        text.drawInRect(textRect, withAttributes: textFontAttributes)
-//        datetext.drawInRect(textRect2, withAttributes: text2FontAttributes)
-//        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//        return newImage
-        
     
     func drawMaskImage(image: UIImage)->UIImage{
         UIGraphicsBeginImageContext(image.size)
@@ -135,26 +97,12 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
     
     func drawMaskLabel(label: UILabel)->UIImage{
         UIGraphicsBeginImageContextWithOptions(photoImageView.frame.size, false, UIScreen.mainScreen().scale)
-       // label.drawInRect(CGRectMake(0, 0, label.size.width, label.size.height))
-//        let maskImage = UIImage(named: "maruta")
-//
-//        let offset: CGFloat = 50.0
-//        let maskRect = CGRectMake(
-//            label.frame.size.width - maskImage!.size.width - offset,
-//            label.frame.size.height - maskImage!.size.height - offset,
-//            maskImage!.size.width,
-//            maskImage!.size.height)
-//        
-//        maskImage!.drawInRect(maskRect)
-        photoImageView.addSubview(label)
+            photoImageView.addSubview(label)
         if let context = UIGraphicsGetCurrentContext() {
             photoImageView.layer.renderInContext(context)
         }
             let newImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-        
-        
-
         return newImage
     }
 
